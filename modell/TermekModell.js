@@ -1,3 +1,12 @@
+import { termekLista } from "../termekLista.js";
+
 export default class TermekModell {
-    constructor() {}
+  #lista = [];
+  constructor() {
+    this.#lista = termekLista;
   }
+
+  getLista(){
+    return this.#lista
+  }
+}
