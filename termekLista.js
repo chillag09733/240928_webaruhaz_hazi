@@ -20,42 +20,42 @@ export const termekLista=[
         "description": "Plant-based gummy bears made with natural fruit juices and without gelatin."
     },
     {
-        "image": "https://unsplash.com/photos/Zp7ebyti3MU",
+        "image": "https://unsplash.com/photos/a-close-up-of-a-bowl-of-cereal-cereal-y3H_G1R-l2M",
         "title": "Gummy Rings",
         "description": "Soft gummy rings in peach, apple, and watermelon flavors, with a sweet and sour coating."
     },
     {
-        "image": "https://unsplash.com/photos/BfphcCvhl6E",
+        "image": "https://unsplash.com/photos/gummy-worms-SGI0i5sHCL8",
         "title": "Gummy Worms",
         "description": "Long, colorful gummy worms in fruity flavors, perfect for a fun snack."
     },
     {
-        "image": "https://unsplash.com/photos/RkBTPqPEGDo",
+        "image": "https://unsplash.com/photos/a-white-and-red-capsule-571ysEZSMFU",
         "title": "Vitamin Gummies",
         "description": "Gummies infused with essential vitamins, providing a tasty and healthy boost."
     },
     {
-        "image": "https://unsplash.com/photos/Z7wRVvXP-0E",
+        "image": "https://unsplash.com/photos/a-group-of-blue-and-white-fish-shaped-candies-tl8mHN2pxro",
         "title": "Gummy Sharks",
         "description": "Blue and white gummy sharks with a sweet and fruity flavor."
     },
     {
-        "image": "https://unsplash.com/photos/pkK5EV9ZLqk",
+        "image": "https://unsplash.com/photos/a-group-of-gummy-bears-sitting-on-top-of-a-blue-table-gkrDn0eqGAk",
         "title": "Gummy Bears",
         "description": "Classic gummy bears in a variety of fruit flavors, from orange to raspberry."
     },
     {
-        "image": "https://unsplash.com/photos/AzCzP3yWZmA",
+        "image": "https://unsplash.com/photos/assorted-color-sweet-treats-in-red-and-blue-plastic-trays-SmZWvAkKRVM",
         "title": "Sour Patch Kids",
         "description": "Sour, then sweet chewy gummies shaped like little kids, in a variety of bold flavors."
     },
     {
-        "image": "https://unsplash.com/photos/U3aF7hgUSrk",
+        "image": "https://unsplash.com/photos/jelly-tube-lot-IpJ5j4ox9BE",
         "title": "Gummy Dinosaurs",
         "description": "Fun-shaped gummies in the form of dinosaurs, available in fruity flavors."
     },
     {
-        "image": "https://unsplash.com/photos/Q69E5L-QKjs",
+        "image": "https://unsplash.com/photos/closeup-photo-of-assorted-color-decor-YaajxnfGeCk",
         "title": "Rainbow Gummies",
         "description": "Multi-colored, layered gummies with a combination of fruity flavors in every bite."
     }
