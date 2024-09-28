@@ -9,40 +9,57 @@ footer {
 }
 
 footer {
-    padding: 10px;
-  }
+  padding: 10px;
+}
 
 header h1 {
   font-size: 3rem;
   text-shadow: 2px 2px #ffa500;
 }
 
-nav{
-    background-color: #f4bbd3;
+nav {
+  background-color: #f4bbd3;
 }
 
 .nav.justify-content-center .nav-item .nav-link {
-    color: white !important;
-    font-weight: bolder !important;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  color: white !important;
+  font-weight: bolder !important;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
 }
 
 .nav.justify-content-center .nav-item .nav-link:hover {
-    background-color: #ff69b4 !important;
+  color: #ff69b4 !important;
 }
 
-.nav.justify-content-center .nav-item .nav-link:active {
-    background-color: white !important;
-    color: #ff69b4 !important;
+.kepgaleria {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.kepgaleria{
-   display: flex;
-   flex-wrap: wrap;
+div.card {
+  margin: 4px;
 }
 
-div .card{
-    margin: 4px;
+img.card-img-top {
+  background-size: cover;
+  height: 170px;
+}
+
+button.gomb {
+  background-color: #ff66b2;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button.gomb:hover {
+  background-color: #ff3385;
 }
