@@ -39,9 +39,10 @@ nav{
 }
 
 .kepgaleria{
-   
+   display: flex;
+   flex-wrap: wrap;
 }
 
-.kosar{
-    
+div .card{
+    margin: 4px;
 }
