@@ -63,3 +63,26 @@ button.gomb {
 button.gomb:hover {
   background-color: #ff3385;
 }
+
+.sorok img{
+  max-width: 100px;
+  max-height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.sorok button{
+  max-height: 50px;
+  font-size: small;
+}
+/* 
+.inaktiv img{
+  width: 20px;
+  height: 25px;
+  
+}
+
+.inaktiv .gomb{
+  max-width: 50px;
+
+} */

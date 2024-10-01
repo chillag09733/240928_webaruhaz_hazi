@@ -6,12 +6,8 @@ export default class Sor {
     this.#adat = adat;
     this.sorLetrehoz();
     this.kukaElem = $(".torol:last");
-    this.kukaElem.on("click", () => {
-      console.log(this.#adat);
-      const e = new CustomEvent("torles", { detail: this.#adat });
-      window.dispatchEvent(e);
-    });
-  }
+    this.athelyezEsemeny()
+    }
 
   sorLetrehoz() {
     this.szuloElem.append(
@@ -21,8 +17,15 @@ export default class Sor {
       }"></td>
                   <td>${this.#adat.title}</td>
                   <td>${this.#adat.description}</td>
-                  <td class="torol">🗑️</td>
+                  <td class="torol"><button class="gomb">Deactivate</button></td>
                    </tr>`
     );
+  }
+
+  athelyezEsemeny(){
+    this.kukaElem.on("click", () => {
+      const e = new CustomEvent("athelyez", { detail: this.#adat });
+      window.dispatchEvent(e);
+    });
   }
 }
