@@ -19,6 +19,11 @@ export default class TermekModell {
   getKivLista(){
     return this.kivalasztottLista
   }
+
+  torles(index) {
+    this.kivalasztottLista.splice(index, 1);
+  }
+  
   // getLista2(){
   //   return this.#listaInaktiv
   // }

@@ -12,15 +12,9 @@ export default class TermekekPublic{
       this.SzuloElemAdmin.empty()
       this.tablazatLetrehoz()
       this.tBodyElem=$(".sorok")
-      this.kosarElem = $(".kosar")
       this.kiir()
      
       
-    }
-    kosarEsemeny(){
-      $(window).on("kivalaszt", (event) => {
-        this.tablazatLetrehoz()
-      })
     }
 
     kiir(){

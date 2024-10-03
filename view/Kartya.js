@@ -25,7 +25,7 @@ export default class Kartya {
 
   esemenyKezelo() {
     this.gombElem.on("click", (event) => {
-      const e = new CustomEvent("kivalaszt", { detail: this.#obj });
+      const e = new CustomEvent("kosarba", { detail: this.#obj });
       window.dispatchEvent(e);
     });
   }

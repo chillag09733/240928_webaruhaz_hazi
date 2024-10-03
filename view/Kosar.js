@@ -1,37 +1,34 @@
-import Sor from "./Sor.js";
+export default class Kosar {
+  #lista = [];
+  constructor(lista, szuloElem) {
+    this.#lista = lista;
+    this.szuloElem = szuloElem;
+    this.kosarElemLetrehoz();
+  }
 
-export default class Kosar{
-    #lista = [];
-    constructor(lista, szuloElem) {
-      console.log(lista);
-      this.#lista = lista;
-      this.szuloElem = szuloElem;
-      this.szuloElem.empty()
-      this.tablazatKiir();
-      this.tBodyElem = $(".sorok");
-      this.sorokLetrehoz();
+  kosarElemLetrehoz() {
+    this.szuloElem.empty();
+    if (this.#lista.length === 0) {
+      this.szuloElem.append(`<p>🛒 Your cart is empty</p>`);
+    } else {
+      this.#lista.forEach((elem) => {
+        this.szuloElem.append(`<div class="cart">
+  <img src="${elem.image}" alt="${elem.title}" class="cart-img">
+  <div class="cart-content">
+    <p class="cart-text">${elem.title}</p>
+  </div>
+  <button class="delete-btn">Delete</button>
+</div>`);
+      });
+
+      this.torlesEsemenyKezelo()
     }
+  }
 
-  sorokLetrehoz() {
-    this.#lista.forEach((elem, index) => {
-      elem.id = index;
-      new Sor(elem, this.tBodyElem);
+  torlesEsemenyKezelo() {
+    this.szuloElem.find(".delete-btn:last").on("click", (event) => {
+      const e = new CustomEvent("torles", { detail: this.#lista });
+      window.dispatchEvent(e);
     });
   }
-
-  tablazatKiir() {
-    this.szuloElem.append(` <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>Picture</th>
-            <th>Product</th>
-            <th>Info</th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody class="sorok">
-        </tbody>
-</table>`);
-  }
-
 }
