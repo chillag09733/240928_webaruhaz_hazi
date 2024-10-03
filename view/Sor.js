@@ -6,8 +6,8 @@ export default class Sor {
     this.#adat = adat;
     this.sorLetrehoz();
     this.kukaElem = $(".torol:last");
-    this.athelyezEsemeny()
-    }
+    this.athelyezEsemeny();
+  }
 
   sorLetrehoz() {
     this.szuloElem.append(
@@ -22,7 +22,7 @@ export default class Sor {
     );
   }
 
-  athelyezEsemeny(){
+  athelyezEsemeny() {
     this.kukaElem.on("click", () => {
       const e = new CustomEvent("athelyez", { detail: this.#adat });
       window.dispatchEvent(e);

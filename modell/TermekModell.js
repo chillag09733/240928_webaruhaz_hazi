@@ -5,25 +5,29 @@ export default class TermekModell {
   // #listaInaktiv=[];
   constructor() {
     this.#lista = termekLista;
+    this.kivalasztottLista = [];
   }
 
-  getLista(){
-    return this.#lista
-    
+  getLista() {
+    return this.#lista;
+  }
+
+  addKivLista(termek) {
+    this.kivalasztottLista.push(termek);
+  }
+
+  getKivLista(){
+    return this.kivalasztottLista
   }
   // getLista2(){
   //   return this.#listaInaktiv
   // }
 
-  sorTorol(index){
-    this.#lista.splice(index,1)
+  sorTorol(index) {
+    this.#lista.splice(index, 1);
+  }
 
-}
-
-// toroltListahozAd(elem){
-//   this.#listaInaktiv.push(elem)
-// }
-
-
-
+  // toroltListahozAd(elem){
+  //   this.#listaInaktiv.push(elem)
+  // }
 }

@@ -12,9 +12,15 @@ export default class TermekekPublic{
       this.SzuloElemAdmin.empty()
       this.tablazatLetrehoz()
       this.tBodyElem=$(".sorok")
+      this.kosarElem = $(".kosar")
       this.kiir()
      
       
+    }
+    kosarEsemeny(){
+      $(window).on("kivalaszt", (event) => {
+        this.tablazatLetrehoz()
+      })
     }
 
     kiir(){
@@ -22,8 +28,10 @@ export default class TermekekPublic{
         new Kartya(elem, this.#taroloElem)
         elem.id=index
         new Sor(elem,this.tBodyElem)
+        //new Sor(elem, this.kosarElem)
       })
     }
+
 
     // athelyezettKiir(lista,htmlElem){
     //   lista.forEach(element => {
@@ -37,9 +45,9 @@ export default class TermekekPublic{
     this.SzuloElemAdmin.append(` <table class="table table-striped">
         <thead>
         <tr>
-            <th>Termékfotó</th>
-            <th>Cím</th>
-            <th>Termékinfó</th>
+            <th>Picture</th>
+            <th>Product</th>
+            <th>Info</th>
             <th></th>
         </tr>
         </thead>
