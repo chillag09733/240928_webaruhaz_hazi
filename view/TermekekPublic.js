@@ -44,6 +44,9 @@ export default class TermekekPublic {
   }
 
   kosarkiir() {
+    if (!this.kosarSzuloElem) {
+      return;
+  }
     this.kosarSzuloElem.empty();
     if (this.#kosarLista.length === 0) {
       this.kosarSzuloElem.append(`<p>🛒 Your cart is empty</p>`);
