@@ -17,7 +17,7 @@ export default class TermekekPublic {
     this.kiir();
     this.#kosarLista = kosarLista;
     this.kosarSzuloElem = kosarSzuloElem;
-    this.kosarkiir(this.#kosarLista);
+    this.kosarkiir();
   }
 
   kiir() {
@@ -43,12 +43,12 @@ export default class TermekekPublic {
 </table>`);
   }
 
-  kosarkiir(lista) {
+  kosarkiir() {
     this.kosarSzuloElem.empty();
-    if (lista.length === 0) {
+    if (this.#kosarLista.length === 0) {
       this.kosarSzuloElem.append(`<p>🛒 Your cart is empty</p>`);
     } else {
-      lista.forEach((elem, index) => {
+      this.#kosarLista.forEach((elem, index) => {
         elem.index = index;
         new Kosar(elem, this.kosarSzuloElem);
       });
