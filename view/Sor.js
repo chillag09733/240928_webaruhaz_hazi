@@ -24,7 +24,7 @@ export default class Sor {
 
   athelyezEsemeny() {
     this.kukaElem.on("click", () => {
-      const e = new CustomEvent("athelyez", { detail: this.#adat });
+      const e = new CustomEvent("deactivate", { detail: this.#adat });
       window.dispatchEvent(e);
     });
   }

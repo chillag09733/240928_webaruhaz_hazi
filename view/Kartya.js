@@ -8,7 +8,6 @@ export default class Kartya {
     this.kiir();
     this.gombElem = $(".gomb:last");
     this.esemenyKezelo();
- 
   }
 
   kiir() {
@@ -29,5 +28,4 @@ export default class Kartya {
       window.dispatchEvent(e);
     });
   }
-  
 }

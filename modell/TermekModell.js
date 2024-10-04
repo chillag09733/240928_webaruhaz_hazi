@@ -2,7 +2,6 @@ import { termekLista } from "../termekLista.js";
 
 export default class TermekModell {
   #lista = [];
-  // #listaInaktiv=[];
   constructor() {
     this.#lista = termekLista;
     this.kivalasztottLista = [];
@@ -16,23 +15,15 @@ export default class TermekModell {
     this.kivalasztottLista.push(termek);
   }
 
-  getKivLista(){
-    return this.kivalasztottLista
+  getKivLista() {
+    return this.kivalasztottLista;
   }
 
   torles(index) {
     this.kivalasztottLista.splice(index, 1);
   }
-  
-  // getLista2(){
-  //   return this.#listaInaktiv
-  // }
 
   sorTorol(index) {
     this.#lista.splice(index, 1);
   }
-
-  // toroltListahozAd(elem){
-  //   this.#listaInaktiv.push(elem)
-  // }
 }
