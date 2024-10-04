@@ -49,7 +49,7 @@ export default class TermekekPublic {
   }
     this.kosarSzuloElem.empty();
     if (this.#kosarLista.length === 0) {
-      this.kosarSzuloElem.append(`<p>🛒 Your cart is empty</p>`);
+      this.kosarSzuloElem.append(`<h2 class="empty">🛒 Your cart is empty</h2>`);
     } else {
       this.#kosarLista.forEach((elem, index) => {
         elem.index = index;
