@@ -6,9 +6,10 @@ export default class ControllerPublic {
     constructor() {
       this.termekModell = new TermekModell()
       const lista = this.termekModell.getLista()
-      this.termekekPublic = new TermekekPublic(lista, $(".kepgaleria"), $(".rendelheto"))
+      
       const kivLista = this.termekModell.getKivLista()
-      this.kosar = new Kosar(kivLista, $(".kosar"))
+      this.termekekPublic = new TermekekPublic(lista, $(".kepgaleria"), $(".rendelheto"),kivLista,$(".kosar"))
+      
       // this.adminInaktivHely=$(".inaktiv")
       // this.adminInaktivHely.empty()
       this.atheyezes()
@@ -33,18 +34,19 @@ export default class ControllerPublic {
     esemeny() {
       $(window).on("kosarba", (event) => {
         this.termekModell.addKivLista(event.detail);
-        this.termekModell.getKivLista()
-        this.kosar.kosarElemLetrehoz();
+        const kivLista=this.termekModell.getKivLista()
+        console.log(kivLista)
+        this.termekekPublic.kosarkiir(kivLista)
       });
     }
   
     torlesEsemeny() {
       $(window).on("torles", (event) => {
         console.log(event.detail);
-        let melyikreKattintottunk = event.detail.id;
+        let melyikreKattintottunk = event.detail.index;
         this.termekModell.torles(melyikreKattintottunk);
         const kivLista = this.termekModell.getKivLista();
-        this.kosar.kosarElemLetrehoz();
+        this.termekekPublic.kosarkiir(kivLista)
       });
     }
   }

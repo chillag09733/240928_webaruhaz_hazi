@@ -1,10 +1,12 @@
 import Kartya from "./Kartya.js";
+import Kosar from "./Kosar.js";
 import Sor from "./Sor.js";
 
 export default class TermekekPublic{
   #lista = []
   #taroloElem
-    constructor(lista, taroloElem, SzuloElemAdmin) {
+  #kosarLista=[]
+    constructor(lista, taroloElem, SzuloElemAdmin, kosarLista,kosarSzuloElem) {
       this.#lista = lista
       this.#taroloElem = taroloElem
       this.#taroloElem.empty()
@@ -13,6 +15,10 @@ export default class TermekekPublic{
       this.tablazatLetrehoz()
       this.tBodyElem=$(".sorok")
       this.kiir()
+      this.#kosarLista=kosarLista;
+      this.kosarSzuloElem=kosarSzuloElem
+      this.kosarkiir(this.#kosarLista)
+      
      
       
     }
@@ -48,4 +54,20 @@ export default class TermekekPublic{
         <tbody class="sorok">
         </tbody>
 </table>`)
-  }}
+  }
+
+kosarkiir(lista){
+  this.kosarSzuloElem.empty()
+  if (lista.length === 0) {
+    this.kosarSzuloElem.append(`<p>🛒 Your cart is empty</p>`);
+}
+else{
+  lista.forEach((elem,index) => {
+    elem.index=index;
+    new Kosar(elem,this.kosarSzuloElem)
+    
+  });
+}
+}
+}
+  
