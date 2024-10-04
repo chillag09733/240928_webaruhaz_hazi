@@ -64,14 +64,14 @@ button.gomb:hover {
   background-color: #ff3385;
 }
 
-.sorok img{
+.sorok img {
   max-width: 100px;
   max-height: 50px;
   padding: 0;
   margin: 0;
 }
 
-.sorok button{
+.sorok button {
   max-height: 50px;
   font-size: small;
 }
@@ -126,27 +126,23 @@ button.gomb:hover {
   background-color: #ff3385;
 }
 
-.rendelheto, .kartyak{
- margin: auto;
-}
-
-.kosar{
+.rendelheto,
+.kartyak {
   margin-inline: auto;
 }
 
-.empty{
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #ff69b4;
-    text-align: center; 
-    background: linear-gradient(90deg, #ffcccb, #ffebcd); 
-    border: 2px dashed #ff69b4;
-    padding: 20px; 
-    border-radius: 15px; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
-    margin-block: 30px; 
+.kosar {
+  margin-inline: auto;
 }
 
-.tablaSor{
-  display: flex;
-  flex-wrap: wrap;
+.empty {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #ff69b4;
+  text-align: center;
+  background: linear-gradient(90deg, #ffcccb, #ffebcd);
+  border: 2px dashed #ff69b4;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-block: 30px;
 }
